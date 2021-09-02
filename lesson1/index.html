@@ -11,6 +11,21 @@
 </head>
 
 <body>
+    <h2>Date calculator</h2>
+    <form id="calcDate">
+
+        <label for="dateFrom">
+            First date:
+            <input type="date" name="dateFrom" />
+        </label>
+        <label for="dateTo">
+            Second date:
+            <input type="date" name="dateTo" />
+        </label>
+        <button type="submit">Calculate gap</button>
+        <p id="output"></p>
+    </form>
+
 
     <div class="stopwatch-wrapper">
         <p class="stopwatch">00:00:00:00</p>
@@ -23,9 +38,9 @@
 
 
 
-    <!-- <script type="module" src="./js/displayTime.js"></script>
+    <script type="module" src="./js/displayTime.js"></script>
     <script type="module" src="./js/stopwatch.js"></script>
-    <script type="module" src="./js/audio.js"></script> -->
+    <script type="module" src="./js/audio.js"></script>
     <script type="module" src="./js/main.js"></script>
 
 </body>
