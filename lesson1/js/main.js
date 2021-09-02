@@ -1,5 +1,7 @@
 "use strict";
 
+
+
 const time = document.querySelector('.stopwatch')
 const mainButton = document.querySelector('#main-button')
 const clearButton = document.querySelector('#clear-button')
