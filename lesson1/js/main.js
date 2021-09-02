@@ -8,6 +8,7 @@ const stopwatch = { elapsedTime: 0 }
 import { displayTime } from './displayTime.js';
 import { startStopwatch } from './stopwatch.js';
 
+
 // Adding Event Listiners to buttons
 
 mainButton.addEventListener('click', () => {
@@ -25,6 +26,11 @@ clearButton.addEventListener('click', () => {
     stopwatch.elapsedTime = 0
     stopwatch.startTime = Date.now()
     displayTime(0, 0, 0, 0)
+})
+
+let soundButton = document.getElementById('main-button');
+soundButton.addEventListener('click', function () {
+    document.getElementById('sound').play()
 })
 
 
