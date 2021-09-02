@@ -7,8 +7,10 @@ const mainButton = document.querySelector('#main-button')
 const clearButton = document.querySelector('#clear-button')
 const stopwatch = { elapsedTime: 0 }
 
-import { displayTime } from './displayTime.js';
-import { startStopwatch } from './stopwatch.js';
+import './stopwatch.js';
+import './displayTime.js';
+import './audio.js';
+
 
 
 // Adding Event Listiners to buttons
@@ -30,10 +32,12 @@ clearButton.addEventListener('click', () => {
     displayTime(0, 0, 0, 0)
 })
 
-let soundButton = document.getElementById('main-button');
-soundButton.addEventListener('click', function () {
-    document.getElementById('sound').play()
-})
+// let soundButton = document.getElementById('main-button');
+// soundButton.addEventListener('click', function () {
+//     document.getElementById('sound').play()
+//     document.getElementById('sound').stop()
+
+// })
 
 
 
