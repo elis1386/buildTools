@@ -1,7 +1,8 @@
 'usr strict';
+
 // Creating our stopwatch function
 
-export function startStopwatch() {
+export default function startStopwatch() {
     //reset start time
     stopwatch.startTime = Date.now();
     // run `setInterval()` and save the ID
