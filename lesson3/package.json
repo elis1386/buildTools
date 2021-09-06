@@ -1,0 +1,28 @@
+{
+  "name": "first-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elis1386/buildTools.git"
+  },
+  "keywords": [
+    "['javascript'",
+    "'js'",
+    "'webpack']"
+  ],
+  "author": "elis1386",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elis1386/buildTools/issues"
+  },
+  "homepage": "https://github.com/elis1386/buildTools#readme",
+  "devDependencies": {
+    "webpack": "^5.51.2",
+    "webpack-cli": "^4.8.0"
+  }
+}
