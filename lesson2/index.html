@@ -2,32 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <title>Калькулятор дат</title>
+    <script defer type="module" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+        integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer type="module" src="js/switch.js"></script>
 </head>
 
 <body>
-
-    <div class="stopwatch-wrapper">
-        <p class="stopwatch">00:00:00:00</p>
-        <div class="control-buttons-wrapper">
-            <button id="main-button" class="control-buttons">Start</button>
-            <button id="clear-button" class="control-buttons">Clear</button>
+    <div class="container">
+        <div class="switch ">
+            <button class="switchBtn" data-id="1">Калькулятор дат</button>
+            <button class="switchBtn" data-id="2">Таймер</button>
         </div>
-        <audio id="sound" src="./sound/04036.mp3"></audio>
+        <div class="service"></div>
+        <p id="output"></p>
     </div>
-
-
-
-    <script type="module" src="./js/displayTime.js"></script>
-    <script type="module" src="./js/stopwatch.js"></script>
-    <script type="module" src="./js/audio.js"></script>
-    <script type="module" src="./js/main.js"></script>
-
 </body>
 
 </html>
