@@ -1,14 +1,26 @@
-import { DateTime } from ' https://moment.github.io/luxon/es6/luxon.min.js'
+import { DateTime } from './luxon.js';
 import { printError, printResult, calcHTML } from "./output.js";
 
-
-export default function (dateFromString, dateToString) {
-    if (dateFromString < dateToString) {
-        [dateFromString, dateToString] = [dateToString, dateFromString];
+export function handleForm() {
+    const form = document.getElementById('calcDate');
+    form.onsubmit = (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        const dateFrom = formData.get('dateFrom');
+        const dateTo = formData.get('dateTo');
+        if (dateFrom === '' || dateTo === '') printError('Укажите оба значения дат!');
+        else {
+            const dateDiff = diff(dateFrom, dateTo);
+            printResult(dateDiff);
+        }
     }
+}
+
+
+export function diff(dateFromString, dateToString) {
+    if (dateFromString < dateToString) [dateFromString, dateToString] = [dateToString, dateFromString];
     const dateFrom = DateTime.fromISO(dateFromString);
     const dateTo = DateTime.fromISO(dateToString);
-
-    dateFrom.diff(dateTo['years', 'months', 'days']).toObject();
-
+    const diff = dateFrom.diff(dateTo, ['years', 'months', 'days']).toObject();
+    return diff
 }
