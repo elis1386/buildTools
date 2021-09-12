@@ -1,1 +1,7 @@
+<<<<<<< HEAD
+node_modules
+parcel
+ .DS_Store
+=======
 .DS_Store
+>>>>>>> master

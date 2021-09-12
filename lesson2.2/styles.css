@@ -1,0 +1,15 @@
+* {
+    font-family: sans-serif;
+  }
+  
+  .container {
+    margin: 150px;
+  }
+
+  .switchBtn {
+    padding: 20px;
+    background-color: lightblue;
+  }
+  .text {
+     color: grey;
+  }
